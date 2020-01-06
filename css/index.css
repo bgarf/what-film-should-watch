@@ -1,3 +1,74 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0px;
+  background-color: #5CAEAE;
+}
+
+
+body {
+  padding: 15% 25%;
+  color: white;
+  font-family: Cabin;
+}
+
+.page-content {
+  text-align: center;
+}
+
+h1 {
+  font-family: Lobster;
+  font-size: 100px;
+  margin: 0 0 30px 0;
+}
+
+#search-input {
+  color: #008181;
+  border: 1px solid #838383;
+  width: 70%;
+  border-radius: 50px;
+  padding: 15px 40px;
+  font-size: 20px;
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+#search-input::placeholder {
+  color: #CDCDCD;
+}
+
+input[type="submit"] {
+  visibility: hidden;
+  position: absolute;
+  top: -999px;
+  left: -999px;
+  width: 0px;
+  height: 0px;
+}
+
+.navbar {
+  margin: 30px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #E9F4F4;
+  padding: 0 10%;
+  font-size: 20px;
+}
+
+a:hover {
+  color: #008181;
+}
+
+.centre {
+  border-left: 2px solid #FFC857;
+  border-right: 2px solid #FFC857;
+}
+
 /*
   Color scheme
 
@@ -12,83 +83,3 @@
 
   colors -> https://coolors.co/008181-5caeae-e9f4f4-f7a006-ffc857
 */
-
-* {
-  font-family: Source Sans Pro;
-}
-
-body {
-  background: #FFF;
-  margin: 0;
-}
-
-.navbar {
-  background: #5CAEAE;
-  overflow: hidden;
-  border-bottom: 2px solid #F7A006;
-  height: 80px;
-  position: relative;
-}
-
-div a{
-  color: #E9F4F4;
-  text-decoration: none;
-  font-size: 25px;
-  float: left;
-  text-align: center;
-  padding: 15px 35px;
-}
-
-a:hover {
-  background: #008181;
-}
-
-.options {
-  line-height: 50px;
-}
-
-#home {
-  border-right: 1px solid #F7A006;
-  padding: 15px 20px;
-  font-size: 40px;
-  line-height: 50px;
-  font-family: Lobster;
-}
-
-
-.search {
-  background: #FFFFFF;
-  float: right;
-  margin: 15px 35px;
-  width: 25%;
-  height: 40px;
-  border: 1px solid #FFC857;
-  border-radius: 30px;
-  padding: 0 15px;
-}
-
-.search-box-content {
-  padding: 4px;
-}
-
-.search-input {
-  border: 0;
-  float: right;
-  width: 90%;
-  padding: 4px 0;
-  font-size: 17px
-}
-
-.search-input:focus {
-  outline: none;
-}
-
-.search-icon {
-  width: 7%;
-  padding-top: 3px;
-  float: left;
-}
-
-input[type="submit"] {
-  visibility: hidden;
-}
