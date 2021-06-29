@@ -11,9 +11,6 @@ body {
   padding: 15% 25%;
   color: white;
   font-family: Cabin;
-}
-
-.page-content {
   text-align: center;
 }
 
@@ -23,7 +20,7 @@ h1 {
   margin: 0 0 30px 0;
 }
 
-#search-input {
+.search-input {
   color: #008181;
   border: 1px solid #838383;
   width: 70%;
