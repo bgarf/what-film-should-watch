@@ -20,7 +20,7 @@ h1 {
   margin: 0 0 30px 0;
 }
 
-.search-input {
+.searchInput {
   color: #008181;
   border: 1px solid #838383;
   width: 70%;
@@ -29,11 +29,13 @@ h1 {
   font-size: 20px;
 }
 
-#search-input:focus {
+
+
+.searchInput:focus {
   outline: none;
 }
 
-#search-input::placeholder {
+.searchInput::placeholder {
   color: #CDCDCD;
 }
 
