@@ -6,18 +6,27 @@ html {
   background-color: #5CAEAE;
 }
 
-
 body {
-  padding: 15% 25%;
+  padding: 15% 0%;
   color: white;
   font-family: Cabin;
   text-align: center;
 }
 
+/* #header {
+  position: sticky;
+  top: 0px;
+  padding: 5%;
+} */
+
 h1 {
+  position: sticky;
+  top: 0px;
   font-family: Lobster;
   font-size: 100px;
-  margin: 0 0 30px 0;
+  background-color: #5CAEAE;
+  padding: 0 0 20px 0;
+  margin: 10px 0 30px 0;
 }
 
 .searchInput {
@@ -28,8 +37,6 @@ h1 {
   padding: 15px 40px;
   font-size: 20px;
 }
-
-
 
 .searchInput:focus {
   outline: none;
@@ -68,17 +75,130 @@ a:hover {
   border-right: 2px solid #FFC857;
 }
 
+#id {
+  display:table; 
+  width: 90%;
+  margin: 5%;
+}
+
+#resultsContainer {
+  width: 90%;
+  margin: 5%;
+}
+
+#resultsGrid {
+  width: 100%;
+  height: 100%;
+  display:grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-auto-rows: 150px;
+  justify-items: center;
+  /* column-gap: 15px; */
+  row-gap: 15px;
+}
+
+.film {
+  background-color: white;
+  border: 0.5px solid #008181;
+  color: #008181;
+  padding: 5%;
+  /* margin: 1%; */
+  width: 80%;
+  height: 100px;
+  border-radius: 25px;
+}
+
+.filmImage {
+  float: left;
+  width: 95px;
+  height: 95px;
+  background-color: #008181;
+}
+
+.filmDesc {
+  float:left;
+  padding: 0 5%;
+  text-align: left;
+  font-size: x-large;
+  word-wrap: break-all;
+  word-spacing: 2px;
+}
+
+.filmTitle {
+  padding: 2% 0;
+}
+
+.filmDirector {
+  padding: 5% 0;
+  border-top: 2px solid #FFC857;
+  font-size: large;
+}
+
+.film:nth-child(3n) {
+  grid-column: 1; 
+}
+
+.film:nth-child(3n + 2) {
+  grid-column: 2; 
+}
+
+.film:nth-child(3n + 3) {
+  grid-column: 3; 
+}
+
+.hasWatchedContainer {
+  float: right;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+}
+
+.hasWatchedUnchecked {
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  border: 2px solid #838383;
+  transition: all 100ms;
+}
+
+.hasWatchedChecked {
+  transition: all 100ms;
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  border: 2px solid #eba61a;
+  background-color: #FFC857;
+}
+
+.hasWatchedUnchecked:hover {
+  width: 32px;
+  height: 32px;
+  background-color: #CDCDCD;
+  border: none;
+}
+
+svg {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+  margin: 3px;
+}
+
 /*
-  Color scheme
+Color scheme
 
-  Teal
-  - 008181 (teal) (navbar hover)
-  - 5CAEAE (verdigris) (navbar)
-  - E9F4F4 (anti flash white) (nav bar text)
+Teal
+- 008181 (teal) (navbar hover)
+- 5CAEAE (verdigris) (navbar)
+- E9F4F4 (anti flash white) (nav bar text)
 
-  Mustard
-  - F7A006 (vivid orange peel) (navbar borders)
-  - FFC857 (mustard)
+Mustard
+- F7A006 (vivid orange peel) (navbar borders)
+- FFC857 (mustard)
 
-  colors -> https://coolors.co/008181-5caeae-e9f4f4-f7a006-ffc857
+colors -> https://coolors.co/008181-5caeae-e9f4f4-f7a006-ffc857
 */
