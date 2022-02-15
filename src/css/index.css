@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Lobster";
+  src: url("../font/Lobster/Lobster-Regular.ttf");
+}
+@font-face {
+  font-family: "Cabin";
+  src: url("../font/Cabin/Cabin-VariableFont_wdth\,wght.ttf");
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -12,12 +21,6 @@ body {
   font-family: Cabin;
   text-align: center;
 }
-
-/* #header {
-  position: sticky;
-  top: 0px;
-  padding: 5%;
-} */
 
 h1 {
   position: sticky;
@@ -86,14 +89,24 @@ a:hover {
   margin: 5%;
 }
 
-#resultsGrid {
+#resultsFilmGrid {
   width: 100%;
   height: 100%;
   display:grid;
   grid-template-columns: repeat(3, 33.3%);
   grid-auto-rows: 150px;
   justify-items: center;
-  /* column-gap: 15px; */
+  row-gap: 15px;
+}
+
+
+#resultsSmallSelectionGrid {
+  width: 100%;
+  height: 100%;
+  display:grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-auto-rows: 150px;
+  justify-items: center;
   row-gap: 15px;
 }
 
@@ -102,22 +115,23 @@ a:hover {
   border: 0.5px solid #008181;
   color: #008181;
   padding: 5%;
-  /* margin: 1%; */
   width: 80%;
   height: 100px;
   border-radius: 25px;
+  display: grid;
+  grid-template-columns: 28% 63% 9%;
+  justify-items: left;
 }
 
 .filmImage {
   float: left;
-  width: 95px;
-  height: 95px;
+  width: 97px;
+  height: 97px;
   background-color: #008181;
 }
 
 .filmDesc {
   float:left;
-  padding: 0 5%;
   text-align: left;
   font-size: x-large;
   word-wrap: break-all;
@@ -186,6 +200,10 @@ svg {
   stroke: white;
   stroke-width: 2px;
   margin: 3px;
+}
+
+styles {
+  width: 20%;
 }
 
 /*
