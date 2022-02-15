@@ -10,6 +10,7 @@
     ]
   },
   "scripts": {
+    "start": "webpack serve --config ./webpack.config.js --mode development --port 8080",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev-start": "webpack-dev-server --open",
     "build": "webpack"
@@ -22,18 +23,18 @@
     "react-dom": "^16.11.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "@babel/preset-react": "^7.9.4",
-    "@babel/register": "^7.9.0",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^3.5.3",
-    "file-loader": "^6.2.0",
+    "@babel/core": "^7.17.3",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/register": "^7.17.0",
+    "@webpack-cli/serve": "^1.6.1",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.6.0",
     "html-webpack-plugin": "^4.3.0",
     "ignore-styles": "^5.0.1",
     "style-loader": "^1.2.1",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0"
+    "webpack": "^5.69.0",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-server": "^4.7.4"
   }
 }

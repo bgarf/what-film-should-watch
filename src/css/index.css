@@ -1,11 +1,4 @@
-@font-face {
-  font-family: "Lobster";
-  src: url("../font/Lobster/Lobster-Regular.ttf");
-}
-@font-face {
-  font-family: "Cabin";
-  src: url("../font/Cabin/Cabin-VariableFont_wdth\,wght.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lobster&display=swap');
 
 html {
   width: 100%;
